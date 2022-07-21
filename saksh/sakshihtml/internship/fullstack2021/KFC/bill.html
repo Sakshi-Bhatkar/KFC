@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./bill.css">
+    <title>Billing Software</title>
+    
+</head>
+<body>
+    <!-- upper -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"> <label for="">Customer Name</label> <input type="text" class="form-control"></div>
+            <div class="col-4"><label for="">Bill Number</label> <input type="text" class="form-control"></div>
+            <div class="col-4"><label for="">Date &Time</label> <input type="text" class="form-control"></div>
+        </div>
+
+        <div class="row">
+            <!-- left side -->
+            <div class="col-8">
+                <div class="billProd">
+                    <h3 align="center">Total Available Products</h3>
+                    <table>
+                        <tr>
+                            <td><button onclick="add('Burger')">Burger 200 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Pizza')">Pizza 180 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Fries')">Fries 150 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Chips')">Chips 50 <i class="fa fa-inr"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('Burger')">Burger 200 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Pizza')">Pizza 180 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Fries')">Fries 150 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Chips')">Chips 50 <i class="fa fa-inr"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('Burger')">Burger 200 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Pizza')">Pizza 180 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Fries')">Fries 150 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Chips')">Chips 50 <i class="fa fa-inr"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('Burger')">Burger 200 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Pizza')">Pizza 180 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Fries')">Fries 150 <i class="fa fa-inr"></i></button></td>
+                            <td><button onclick="add('Chips')">Chips 50 <i class="fa fa-inr"></i></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="col-4">
+                <div class="billGen">
+                  <h5 align="center" >Bill no:#345fo</h5>
+                  <div class="row">
+                      <div class="col-6">
+                          <h6>Name:</h6>
+                      </div>
+                      <div class="col-6">
+                        <h6>Date:</h6>
+                    </div>
+                  </div>
+                  <div class="bill">
+                      <ol id="list">
+                          <li>Burger - 200 <i class="fa fa-inr"></i> -(1)</li>
+                      </ol>
+                  </div>
+                  <b>Total:</b>
+                  <button class="print btn btn-success">
+                      print
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function add(product){
+           
+        }
+    </script>
+</body>
+</html>
